@@ -38,7 +38,8 @@ jobs:
   run-orquestador:
     uses: jgallardo-clever/test-orquestador-fge/.github/workflows/orquestador.yml@main
     with:
-      rama: ${{ github.event.inputs.rama }}
-      tecnologia: ${{ github.event.inputs.tecnologia }}
-      requiere_compilar: ${{ github.event.inputs.requiere_compilar }}
-      despliegue_en: ${{ github.event.inputs.despliegue_en }}
+      rama: ${{ inputs.rama }}
+      tecnologia: ${{ inputs.tecnologia }}
+      requiere_compilar: ${{ inputs.requiere_compilar }}
+      despliegue_en: ${{ inputs.despliegue_en }}
+    secrets: inherit
