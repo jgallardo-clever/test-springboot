@@ -42,4 +42,5 @@ jobs:
       tecnologia: ${{ inputs.tecnologia }}
       requiere_compilar: ${{ inputs.requiere_compilar }}
       despliegue_en: ${{ inputs.despliegue_en }}
+      SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
     secrets: inherit
